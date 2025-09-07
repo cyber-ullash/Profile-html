@@ -3,7 +3,7 @@ import httpx
 
 app = FastAPI()
 
-UPSTREAM_API = "http://208.84.102.89:6275"  # <-- replace with the real target API
+UPSTREAM_API = "http://46.247.108.38:6125"  # <-- replace with the real target API
 
 @app.api_route("/{path:path}", methods=["GET", "POST"])
 async def mask_api(path: str, request: Request):
